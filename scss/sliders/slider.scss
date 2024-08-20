@@ -1,0 +1,204 @@
+/* slider-section-1
+===========================================*/
+
+.main-slider {
+  position: relative;
+
+  .container {
+    padding: 0;
+  }
+}
+
+.slider {
+  .slide {
+    display: flex;
+    align-items: center;
+    padding: 40px 100px;
+    &__text {
+      display: flex;
+      flex-direction: column;
+      .title {
+        display: inline-block;
+        margin-bottom: 15px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 64px;
+        color: #fff;
+        @media (max-width: 576px) {
+          font-size: 26px;
+          line-height: 34px;
+        }
+      }
+      .text {
+        display: inline-block;
+        margin-bottom: 45px;
+        font-size: 24px;
+        font-weight: normal;
+        line-height: 150%;
+        color: #fff;
+        .btn-left {
+          background: #fff;
+          font-size: 18px;
+          color: black;
+        }
+        .btn-right {
+          font-size: 24px;
+          color: #fff;
+        }
+      }
+
+      @media (max-width: 767px) {
+        padding: 15px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      padding: 40px 0px;
+    }
+  }
+}
+
+/* slider-nav */
+
+.tns-nav {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0px;
+  button {
+    margin-right: 8px;
+    padding: 7px;
+    border-radius: 50%;
+    border: none;
+    background: #ececec;
+    transition: background ease 0.3s;
+    &:last-child {
+      margin-right: 0;
+    }
+    &.tns-nav-active {
+      background: #2427f0;
+    }
+  }
+}
+
+/* 
+
+576px for portrait phones.
+768px for tablets.
+992px for laptops.
+1200px for large devices. 
+
+*/
+
+@media (max-width: 1199px) {
+  .main-slider .main-slide .main-slide__text {
+    padding-top: 12%;
+  }
+}
+
+@media (max-width: 991px) {
+  .main-slider .main-slide .main-slide__text {
+    padding-top: 14%;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-slider .main-slide .main-slide__text {
+    padding-top: 18%;
+  }
+}
+
+@media (max-width: 575px) {
+  .main-slider .main-slide .main-slide__text .title {
+    font-size: 28px;
+  }
+  .main-slider .main-slide .main-slide__text {
+    padding-top: 40%;
+  }
+  .main-slider .main-slide__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main-slider .main-slide .main-slide__text .btn-left {
+    padding: 10px 27px;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  .main-slider .main-slide .main-slide__text .btn-right {
+    font-size: 22px;
+    padding: 0;
+  }
+}
+
+/* slider-section-2
+===========================================*/
+
+.slider {
+  &__content {
+    padding: 110px 100px;
+
+    .title {
+      display: inline-block;
+      margin-bottom: 15px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 56px;
+      line-height: 72px;
+      color: #fff;
+      @media screen and (max-width: 1600px) {
+        font-size: 52px;
+        line-height: 66px;
+      }
+      @media (max-width: 1456px) {
+        font-size: 36px;
+        line-height: 44px;
+      }
+      @media (max-width: 576px) {
+        font-size: 26px;
+        line-height: 32px;
+      }
+    }
+    .text {
+      display: inline-block;
+      margin-bottom: 45px;
+      font-size: 24px;
+      font-weight: normal;
+      line-height: 150%;
+      color: #fff;
+      .btn-left {
+        background: #fff;
+        font-size: 18px;
+        color: black;
+      }
+      .btn-right {
+        font-size: 24px;
+        color: #fff;
+      }
+    }
+
+    @media screen and (max-width: 1600px) {
+      padding: 40px 100px;
+    }
+
+    @media screen and (max-width: 767px) {
+      padding-left: unset;
+    }
+  }
+
+  &__img {
+    img {
+      @media screen and (min-width: 1020px) {
+        position: absolute;
+        bottom: 0;
+      }
+    }
+
+    @media screen and (min-width: 1020px) {
+      position: relative;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
